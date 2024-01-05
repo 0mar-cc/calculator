@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #FFC436;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.calcBody{
+    width: 280px;
+    height: 450px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161A30;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.30);
+}
+
+.monitor{
+    width:250px;
+    height:80px;
+    display: flex;
+    flex: 0 0 auto;
+    background-color: #2D4356;
+    border-radius: 10px;
+    margin-top:15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.calcContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    margin: 18px 12px 12px 12px;
+    gap: 8px;
+}
+
+button{
+    width: 55px;
+    height:55px;
+    background-color: #B6BBC4;
+    color:black;    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 550;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-color: white;
+    border-style:hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+button:active {
+    box-shadow: 0 5px #161A30;
+    transform: translateY(3px);
+}
+
+#acOperation:hover,
+#cOperation:hover
+{
+    background-color: #F24C3D;
+    color: white;
+    margin-top:-4px;
+}
+
+#equal{
+    width: 115px;
+    height: 55px;
+    border-radius: 30px;
+}
+
+#division:hover,
+#addition:hover,
+#subtraction:hover,
+#multiplication:hover,
+#percentage:hover
+{
+    background-color: #9BCDD2;
+    margin-top:-4px;
+
+}
+
+#equal:hover{
+    background-color: #A2FF86;
+    margin-top:-4px;
+
+}
+
+.numbers:hover{
+    background-color: #5e6163;
+    color:white;
+    margin-top:-4px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 60px;
+}
