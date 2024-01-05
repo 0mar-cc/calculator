@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script href="main.js" defer></script>
+        <script src="main.js" defer></script>
     </head>
     <body>
         <div class="container">
             <div class="calcBody">
-                <div class="monitor"></div>
+            <div id="monitor"> 
+                <div id="monitorNums"></div>
+            </div>
                 <div class="calcContent">
                     <button id="acOperation">AC</button>
                     <button id="cOperation">C</button>
                     <button id="percentage">%</button>
                     <button id="division">/</button>
-                    <button class="numbers">7</button>
-                    <button class="numbers">8</button>
-                    <button class="numbers">9</button>
+                    <button class= "numbers" id="seven">7</button>
+                    <button class="numbers" id="eight">8</button>
+                    <button class="numbers" id="nine">9</button>
                     <button id="addition">+</button>
-                    <button class="numbers">4</button>
-                    <button class="numbers">5</button>
-                    <button class="numbers">6</button>
+                    <button class="numbers" id="four">4</button>
+                    <button class="numbers" id="five">5</button>
+                    <button class="numbers" id="six">6</button>
                     <button id="subtraction">-</button>
-                    <button class="numbers">1</button>
-                    <button class="numbers">2</button>
-                    <button class="numbers">3</button>
+                    <button class="numbers" id="one">1</button>
+                    <button class="numbers" id="two">2</button>
+                    <button class="numbers" id="three">3</button>
                     <button id="multiplication">x</button>
-                    <button class="numbers">0</button>
+                    <button class="numbers" id="zero">0</button>
                     <button class="numbers">.</button>
                     <button id="equal">=</button>
                 </div>
