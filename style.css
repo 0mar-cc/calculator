@@ -43,7 +43,7 @@ body{
     flex-wrap: wrap;
     flex: 0 1 auto;
     justify-content: space-between;
-    margin: 18px 12px 12px 12px;
+    margin: 18px 12px 15px 12px;
     gap: 8px;
 }
 
@@ -52,7 +52,7 @@ button{
     height:55px;
     background-color: #B6BBC4;
     color:black;    
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     font-weight: 550;
     display:flex;
@@ -63,6 +63,7 @@ button{
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
 button:active {
     box-shadow: 0 5px #161A30;
     transform: translateY(3px);
@@ -88,19 +89,20 @@ button:active {
 #multiplication:hover,
 #percentage:hover
 {
-    background-color: #9BCDD2;
+    background-color: #6DA9E4;
+    color: white;
     margin-top:-4px;
 
 }
 
 #equal:hover{
-    background-color: #A2FF86;
+    background-color: #98D8AA;
     margin-top:-4px;
 
 }
 
 .numbers:hover{
-    background-color: #5e6163;
+    background-color: #4F4557;
     color:white;
     margin-top:-4px;
 }
