@@ -8,14 +8,14 @@ body{
     background-color: #FFC436;
 }
 
-.container{
+.container-parent{
     display:flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
 }
 
-.calcBody{
+.calculator{
     width: 280px;
     height: 450px;
     display:flex;
@@ -27,18 +27,33 @@ body{
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.30);
 }
 
-#monitor{
+#display{
     width:250px;
     height:80px;
-    display: flex;
-    flex: 0 0 auto;
     background-color: #2D4356;
     border-radius: 10px;
     margin-top:15px;
+    padding: 10px 20px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-.calcContent{
+.display-last {
+    color: mediumaquamarine;
+    min-height: 32px;
+    font-size: 20px;
+}
+
+.display-current {
+    color: mediumaquamarine;
+    min-height: 64px;
+    font-size: 28px;
+}
+
+
+.buttons-grid{
     display: flex;
     flex-wrap: wrap;
     flex: 0 1 auto;
@@ -69,25 +84,27 @@ button:active {
     transform: translateY(3px);
 }
 
-#acOperation:hover,
-#cOperation:hover
+#allClearBtn:hover,
+#clearBtn:hover
 {
     background-color: #F24C3D;
     color: white;
     margin-top:-4px;
 }
 
-#equal{
+#equalsBtn{
     width: 115px;
     height: 55px;
     border-radius: 30px;
 }
 
-#division:hover,
-#addition:hover,
-#subtraction:hover,
-#multiplication:hover,
-#percentage:hover
+#equalsBtn:hover{
+    background-color: #98D8AA;
+    margin-top:-4px;
+
+}
+
+[data-operator]:hover
 {
     background-color: #6DA9E4;
     color: white;
@@ -95,13 +112,13 @@ button:active {
 
 }
 
-#equal:hover{
-    background-color: #98D8AA;
+[data-number]:hover{
+    background-color: #4F4557;
+    color:white;
     margin-top:-4px;
-
 }
 
-.numbers:hover{
+#pointBtn:hover{
     background-color: #4F4557;
     color:white;
     margin-top:-4px;

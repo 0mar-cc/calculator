@@ -7,33 +7,34 @@
         <script src="main.js" defer></script>
     </head>
     <body>
-        <div class="container">
-            <div class="calcBody">
-            <div id="monitor"> 
-                <div id="monitorNums"></div>
-            </div>
-                <div class="calcContent">
-                    <button id="acOperation">AC</button>
-                    <button id="cOperation">C</button>
-                    <button id="percentage">%</button>
-                    <button id="division">/</button>
-                    <button class= "numbers" id="seven">7</button>
-                    <button class="numbers" id="eight">8</button>
-                    <button class="numbers" id="nine">9</button>
-                    <button id="addition">+</button>
-                    <button class="numbers" id="four">4</button>
-                    <button class="numbers" id="five">5</button>
-                    <button class="numbers" id="six">6</button>
-                    <button id="subtraction">-</button>
-                    <button class="numbers" id="one">1</button>
-                    <button class="numbers" id="two">2</button>
-                    <button class="numbers" id="three">3</button>
-                    <button id="multiplication">x</button>
-                    <button class="numbers" id="zero">0</button>
-                    <button class="numbers">.</button>
-                    <button id="equal">=</button>
+        <div class="container-parent">
+            <div class="calculator">
+                <div id="display"> 
+                        <div class="display-last" id="lastOperationDisplay"></div>
+                        <div class="display-current" id="currentOperationDisplay">0</div>
                 </div>
-            </div>
+                    <div class="buttons-grid">
+                        <button class="btn" onclick="this.blur()"; id="allClearBtn">AC</button>
+                        <button class="btn" onclick="this.blur()"; id="clearBtn">C</button>
+                        <button class="btn" onclick="this.blur()"; data-operator>%</button>
+                        <button class="btn" onclick="this.blur()"; data-operator>/</button>
+                        <button class="btn" onclick="this.blur()"; data-number>7</button>
+                        <button class="btn" onclick="this.blur()"; data-number>8</button>
+                        <button class="btn" onclick="this.blur()"; data-number>9</button>
+                        <button class="btn" onclick="this.blur()"; data-operator>+</button>
+                        <button class="btn" onclick="this.blur()"; data-number>4</button>
+                        <button class="btn" onclick="this.blur()"; data-number>5</button>
+                        <button class="btn" onclick="this.blur()"; data-number>6</button>
+                        <button class="btn" onclick="this.blur()"; data-operator>-</button>
+                        <button class="btn" onclick="this.blur()"; data-number>1</button>
+                        <button class="btn" onclick="this.blur()"; data-number>2</button>
+                        <button class="btn" onclick="this.blur()"; data-number>3</button>
+                        <button class="btn" onclick="this.blur()"; data-operator>x</button>
+                        <button class="btn" onclick="this.blur()"; data-number>0</button>
+                        <button class="btn" onclick="this.blur()"; id="pointBtn">.</button>
+                        <button class="btn" onclick="this.blur()"; id="equalsBtn">=</button>
+                    </div>
+                </div>
             <p>Omar-cc &copy; 2024</p>
         </div>
     </body>
