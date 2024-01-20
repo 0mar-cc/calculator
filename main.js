@@ -67,16 +67,24 @@ function setOperation(operator){
 
 function evaluate(){
     if (currentOperation === null || shouldResetScreen) return
-    if(currentOperationDisplay === "/" && currentOperationDisplay.textContent === "0"){
+    
+    if(currentOperation === "/" && currentOperationDisplay.textContent === "0"){
         alert ("You can't divide by 0 dude!")
-        return
     }
-    secondOperand = currentOperationDisplay.textContent
-    currentOperationDisplay.textContent = roundResult(
-        operate(currentOperation, firstOperand, secondOperand)
-    )
-    lastOperationDisplay.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`
-    currentOperation = null
+    
+    if(currentOperation === "%"){
+        currentOperationDisplay.textContent = percentage(firstOperand)
+        lastOperationDisplay.textContent = `${firstOperand} ${currentOperation}=`
+    }
+
+    if(currentOperation !== "%"){
+        secondOperand = currentOperationDisplay.textContent
+        currentOperationDisplay.textContent = roundResult(
+            operate(currentOperation, firstOperand, secondOperand)
+        )
+        lastOperationDisplay.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`
+        currentOperation = null
+    }
 }
 
 function roundResult(number){
@@ -97,6 +105,10 @@ function multiply(a, b) {
 
 function divide(a, b) {
     return a / b
+}
+
+function percentage(a){
+    return Number(a) * 100
 }
 
 function operate(operator, a, b){
